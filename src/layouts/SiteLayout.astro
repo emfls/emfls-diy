@@ -1,0 +1,61 @@
+---
+import '../styles/site.css';
+
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+}
+
+const { title, description, noindex = false } = Astro.props;
+const currentPath = Astro.url.pathname;
+const canonical = new URL(currentPath, 'https://diy.emfls.com').toString();
+const navigation = [
+  { href: '/', label: '워크숍 홈' },
+  { href: '/safety/', label: '안전 기준' },
+  { href: '/about/', label: '사이트 소개' },
+];
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f1ecdf" />
+    <meta name="description" content={description} />
+    <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+    {!noindex && <link rel="canonical" href={canonical} />}
+    <meta property="og:site_name" content="EMFLS DIY" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {!noindex && <meta property="og:url" content={canonical} />}
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="wordmark" href="/" aria-label="EMFLS DIY 워크숍 홈">
+          <span class="wordmark-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M7 7.5h26v25H7z" stroke="currentColor" stroke-width="1.5" /><path d="M12 27V13h15M12 20h11M24 13v14M24 27l5-5" stroke="currentColor" stroke-width="1.5" /><circle cx="12" cy="13" r="1.5" fill="currentColor" /><circle cx="29" cy="27" r="1.5" fill="currentColor" /></svg>
+          </span>
+          <span class="wordmark-type"><strong>EMFLS <span>DIY</span></strong><small>BEGINNER WORKSHOP NOTES</small></span>
+        </a>
+        <div class="site-id">SITE <span>14</span> <i aria-hidden="true"></i> FIELD MANUAL</div>
+        <nav class="primary-nav" aria-label="주요 메뉴">
+          {navigation.map((item) => <a href={item.href} aria-current={currentPath === item.href ? 'page' : undefined}>{item.label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main id="main-content"><slot /></main>
+    <footer class="site-footer">
+      <div class="shell footer-top">
+        <div><a class="footer-brand" href="/">EMFLS DIY</a><p>작업 전에 준비하고, 측정하고, 안전한 다음 단계를 확인합니다.</p></div>
+        <nav aria-label="사이트 정보"><a href="/about/">소개</a><a href="/editorial-policy/">편집 원칙</a><a href="/privacy/">개인정보</a><a href="/contact/">문의</a></nav>
+      </div>
+      <div class="shell footer-bottom"><span>© EMFLS DIY · SITE 14</span><span>고위험 작업은 이 사이트의 일반 DIY 안내 범위에 포함되지 않습니다.</span></div>
+    </footer>
+  </body>
+</html>

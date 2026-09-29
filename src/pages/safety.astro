@@ -1,0 +1,37 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const title = 'DIY 안전 기준 | EMFLS DIY';
+const description = 'DIY 작업을 시작하기 전 작업 공간, 재료 고정, 보호 장비와 멈춤 조건을 확인하세요. 고위험 작업은 전문가에게 맡기는 기준을 안내합니다.';
+---
+
+<SiteLayout title={title} description={description}>
+  <div class="shell page-shell">
+    <header class="page-intro safety-intro">
+      <p class="eyebrow"><span>SAFETY FIRST</span> <span>14 / 02</span></p>
+      <h1>안전하게 판단할 수 없다면,<br /><em>작업을 멈추세요.</em></h1>
+      <p class="page-lede">일반적인 준비 정보는 현장 점검이나 전문가 판단을 대신하지 않습니다. 확인할 수 없는 설비·재료·하중 조건이 있으면 작업을 진행하지 마세요.</p>
+    </header>
+    <section class="safety-stop" aria-labelledby="stop-title">
+      <div class="stop-symbol" aria-hidden="true">!</div>
+      <div>
+        <p class="eyebrow"><span>STOP / SEEK QUALIFIED HELP</span></p>
+        <h2 id="stop-title">이 범위는 초보 DIY 절차로 다루지 않습니다</h2>
+        <p>전기 배선·가스 설비·하중을 받는 구조체·높은 곳에서의 작업·대형 절삭 장비·유해 물질 교란은 자격과 현장 확인이 필요한 영역입니다. 해당 작업이 포함되거나 위험 징후가 있으면 이 사이트의 단계를 따라 진행하지 말고, 필요한 경우 현지 긴급 안내와 전문 서비스를 이용하세요.</p>
+      </div>
+    </section>
+    <section class="prose-section split-prose">
+      <div class="prose-label">CHECK BEFORE WORK</div>
+      <div class="prose-body">
+        <h2>시작하기 전 살펴볼 조건</h2>
+        <ul class="check-list">
+          <li><strong>작업 공간</strong><span>밝고 정돈된 공간인지, 재료가 흔들리지 않도록 놓고 고정할 수 있는지 살핍니다.</span></li>
+          <li><strong>도구 상태</strong><span>제품 설명과 보호장치를 확인합니다. 손상되었거나 익숙하지 않은 장비는 사용하지 않습니다.</span></li>
+          <li><strong>먼지와 환기</strong><span>재료와 제품의 경고·사용 표시에 따라 환기와 보호 장비를 준비합니다.</span></li>
+          <li><strong>숨은 조건</strong><span>벽 안의 전선·배관, 재료의 지지 조건, 현장 하중처럼 보이지 않는 요소를 추측으로 판단하지 않습니다.</span></li>
+        </ul>
+      </div>
+    </section>
+    <p class="safety-footnote">공구와 재료별 보호 조건은 해당 제품의 최신 사용 설명서와 표시사항을 우선하세요. 안전 기준은 작업 위치와 적용되는 규정에 따라 달라질 수 있습니다.</p>
+  </div>
+</SiteLayout>

@@ -24,9 +24,19 @@ If instructions clearly belong to another EMFLS project, stop and report:
 6. Actual code
 7. Production
 
-## Current stage
+## Active execution contract
 
-Stage 2 establishes only the minimal runnable Astro + TypeScript static scaffold.
+The EMFLS 100-Site Completion Owner Directive 11 is the current priority: complete
+minimum Foundation + Search Launch readiness across Sites 1–100 before deep content,
+advanced tools, design polish, or AdSense optimization. The directive supersedes the
+historical Stage 2-only bootstrap notes in older repo documents.
 
-Do not infer or invent the final design, content strategy, Cloudflare configuration,
-search activation, GA4, or AdSense configuration during this stage.
+For this repository, use Site No. 14's current Notion Site Control Page for topic
+identity, safety boundaries, and design direction. Keep this checkout limited to
+`emfls-diy`; make one-site changes only; checkpoint Notion as work progresses; and
+update `PROJECT_HISTORY.md` whenever code changes. Never modify other EMFLS repos.
+
+The initial foundation must remain useful but deliberately small. Keep high-risk
+professional electrical, gas, structural, high-work, heavy-cutting, and hazardous
+material work outside beginner procedures. Do not add search-targeted material whose
+claims lack an appropriate source.

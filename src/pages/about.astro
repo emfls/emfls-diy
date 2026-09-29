@@ -1,0 +1,33 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const title = 'EMFLS DIY 소개 | 초보 작업을 위한 워크숍 매뉴얼';
+const description = 'EMFLS DIY의 목적과 다루는 작업 범위, 초보자가 재료·치수·공구·안전을 먼저 살펴보도록 돕는 편집 기준을 안내합니다.';
+---
+
+<SiteLayout title={title} description={description}>
+  <div class="shell page-shell">
+    <header class="page-intro">
+      <p class="eyebrow"><span>ABOUT THE WORKSHOP</span> <span>14 / 01</span></p>
+      <h1>결과 사진보다,<br /><em>준비할 수 있는 정보</em>를.</h1>
+      <p class="page-lede">EMFLS DIY는 직접 만들고 고치는 사람이 작업을 시작하기 전에 재료, 치수, 도구와 위험 조건을 차례로 살펴보도록 돕는 초보자용 워크숍 매뉴얼입니다.</p>
+    </header>
+    <section class="prose-section split-prose">
+      <div class="prose-label">01 / PURPOSE</div>
+      <div class="prose-body">
+        <h2>작업의 다음 단계를 이해하도록</h2>
+        <p>무엇을 준비해야 하는지, 어떤 조건을 확인해야 하는지, 언제 멈춰야 하는지를 명확히 설명합니다. 따라 하기만 하는 절차보다 목적·재료·측정·확인 지점을 함께 다룹니다.</p>
+        <p>기초 목공, 가구 조립과 보수, 페인팅, 간단한 벽면 작업, 도구와 재료 선택이 주요 범위입니다. 프로젝트 설명은 실제 조건과 제품에 따라 달라질 수 있는 부분을 구분합니다.</p>
+      </div>
+    </section>
+    <section class="prose-section split-prose">
+      <div class="prose-label">02 / BOUNDARY</div>
+      <div class="prose-body">
+        <h2>모든 작업을 직접 할 필요는 없습니다</h2>
+        <p>전문 전기·가스·구조 작업, 고소 작업, 대형 절삭 장비, 고위험 물질을 다루는 작업은 일반 초보자용 안내 범위에 포함하지 않습니다. 현장 상태를 직접 확인할 수 없거나 작업의 안전 조건을 판단할 수 없으면 자격을 갖춘 전문가와 확인하세요.</p>
+        <a class="arrow-link" href="/safety/">안전 기준 자세히 보기 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <aside class="editorial-stamp"><span class="stamp-icon" aria-hidden="true">M</span><p><strong>Measure / Mark / Make a safe check</strong><br />정확한 기준과 확인 지점이 안전하고 쓸모 있는 DIY의 출발점입니다.</p></aside>
+  </div>
+</SiteLayout>

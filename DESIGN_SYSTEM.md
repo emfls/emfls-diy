@@ -1,8 +1,17 @@
 # Design System
 
-The final independent design identity for this site has not been implemented in Stage 2.
+## Visual identity
 
-Stage 2 contains only a technical bootstrap.
+Derived from the Site Control Page: a practical workshop board and drafting sheet,
+with warm kraft/cream paper, graphite text, measurement lines, and restrained safety
+orange. Use document-like lists, labels, and drawing marks instead of turning every
+section into a generic card grid.
 
-The final design must be defined from the site's Site Control Page during the
-Site Identity & IA stage and must not become a color-only clone of another EMFLS site.
+## Interface rules
+
+- Korean language, clear measurements vocabulary, and readable line lengths.
+- Keep safety boundaries visible and never present decorative diagrams as scaled plans.
+- Use semantic headings, keyboard skip navigation, responsive layouts, and reduced
+  motion support.
+- No site-wide image or illustration claims that imply exact dimensions or a real build
+  sequence unless the content is separately verified.

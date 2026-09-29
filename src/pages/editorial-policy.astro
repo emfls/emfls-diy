@@ -1,0 +1,36 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const title = '편집 및 출처 원칙 | EMFLS DIY';
+const description = 'EMFLS DIY가 공구·재료·측정·작업 정보를 확인하고 출처를 표시하며 안전 범위를 검토하는 편집 원칙입니다.';
+---
+
+<SiteLayout title={title} description={description}>
+  <div class="shell page-shell">
+    <header class="page-intro">
+      <p class="eyebrow"><span>EDITORIAL STANDARD</span> <span>14 / 03</span></p>
+      <h1>확인 가능한 정보와<br /><em>분명한 한계</em>를.</h1>
+      <p class="page-lede">작업 안내는 그럴듯해 보이는 순서보다 출처, 사용 조건, 확인 지점을 우선합니다. 현장과 제품마다 달라지는 사항은 보편적인 사실처럼 단정하지 않습니다.</p>
+    </header>
+    <section class="prose-section split-prose">
+      <div class="prose-label">SOURCE ORDER</div>
+      <div class="prose-body">
+        <h2>정보를 확인하는 순서</h2>
+        <ol class="policy-list">
+          <li><span>01</span><div><strong>제품별 조건</strong><p>정확한 규격, 호환성, 설치, 건조·경화 시간은 해당 제조사의 최신 설명서, 라벨, 기술 자료를 확인합니다.</p></div></li>
+          <li><span>02</span><div><strong>안전 근거</strong><p>위험과 보호 조건은 관련 공공기관의 최신 안전 안내와 적용 지역의 공식 정보를 우선해 확인합니다.</p></div></li>
+          <li><span>03</span><div><strong>범용 설명</strong><p>기본 개념은 제품별 수치와 구분해 설명하고, 근거 없이 하중·강도·성능을 보장하지 않습니다.</p></div></li>
+        </ol>
+      </div>
+    </section>
+    <section class="prose-section split-prose">
+      <div class="prose-label">REVIEW & CORRECTIONS</div>
+      <div class="prose-body">
+        <h2>정정과 안전 검토</h2>
+        <p>정보가 제품 표시나 공식 안내와 다르거나 안전상 우려가 있으면 정정 요청을 보내 주세요. 확인 가능한 출처와 문제가 있는 페이지 주소를 함께 보내면 검토에 도움이 됩니다.</p>
+        <p>위험도가 높은 작업의 절차를 임의로 보강하지 않습니다. 안전한 범위를 확인할 근거가 부족하면 해당 단계를 보류하거나 전문가 확인이 필요하다고 표시합니다.</p>
+        <a class="arrow-link" href="/contact/">정정 요청 보내기 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </div>
+</SiteLayout>

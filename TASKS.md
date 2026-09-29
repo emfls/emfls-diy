@@ -2,11 +2,12 @@
 
 ## Current
 
-Stage 2 — Minimal Astro Bootstrap
+Owner Directive 11 — complete this site's minimum Foundation + Search Launch state,
+with live Notion checkpoints. Keep work to this repository and the Site Control Page's
+workshop scope.
 
-## Later
+## Deferred
 
-Site-specific work is controlled centrally through the EMFLS Network Work Queue
-and this site's Notion Site Control Page.
-
-Do not start later stages automatically.
+Deep project/skill guides, the Material Calculator, the Project Checklist, design
+polish, and AdSense optimization follow after all Sites 1–100 clear the minimum
+Foundation + Search Launch pass.

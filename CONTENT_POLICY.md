@@ -1,8 +1,10 @@
 # Content Policy
 
-Stage 2 does not publish substantive search-targeted content.
+The minimum Foundation + Search Launch may publish a compact site-specific overview,
+trust information, and visible safety boundaries. Deeper guides and product-specific
+procedures remain outside that minimum wave.
 
-Rules for later stages:
+Rules for any substantive content:
 
 - Follow the site's documented Topic Boundary.
 - Do not mass-generate thin SEO pages.
