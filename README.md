@@ -8,8 +8,10 @@ An EMFLS workshop manual for people beginning small DIY projects.
 - Framework: Astro + TypeScript
 - Output: Static
 - Current scope: Owner Directive 11 minimum Foundation + Search Launch
-- Source indexing policy: Public foundation pages are indexable and the 404 is noindex;
-  Production publication and Search Console/Search Advisor submissions are pending
+- Search state: Production pages are indexable and the 404 is noindex; Google property
+  and sitemap are submitted; IndexNow returned 202 with key validation pending. Naver
+  registration/sitemap need an authenticated session, and Daum registration awaits
+  mandatory applicant consent and details (see `PROJECT_HISTORY.md`).
 
 The site focuses on beginner woodworking, furniture assembly/repair, painting,
 measurement, tools, materials, and safe-work boundaries. Professional electrical,
